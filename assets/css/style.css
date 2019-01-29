@@ -351,15 +351,52 @@ input[type=text]:focus {
 }
 
 /* Responsive layout - makes columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-    .flip-card, .hero-text, .flex-container, .container, .center, .col-25, .col-75, input[type=submit]  {
+@media screen and (max-width: 980px) {
+    .hero-text, .flex-container, .container, .center, .col-25, .col-75, input[type=submit]  {
         width: 100%;
-           }
-           .center, .flip-card{
-               float: none;
+                    }
+            html {
+                width: 100%;
+            }
             
-           }
-           .container {
-               width: auto;
-           }
+
+            .center, {
+            float: none; 
+                           
+            }
+            .flip-card-inner, .flip-card-front {
+                background-color: transparent;
+            }
+          
         }
+
+ @media screen and (max-width: 768px) {
+            .hero-text, .flex-container, .container, .center, .col-25, .col-75, input[type=submit]  {
+                width: 100%;
+                            }
+                    .center, {
+                    float: none; 
+                                   
+                    }
+                    .flip-card-inner, .flip-card-front {
+                        background-color: transparent;
+                    }
+                   
+                }
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .hero-text, .flex-container, .container, .center, .col-25, .col-75, input[type=submit]  {
+    width: 100%;
+                }
+        .center, {
+        float: none; 
+                       
+        }
+        .flip-card-inner, .flip-card-front {
+            background-color: transparent;
+        }
+      
+        .header {
+            position: static;
+        }
+            }
