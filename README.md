@@ -1,2 +1,2 @@
-# mytoehertz.github.io
+# mytoehertz
 Personal Website
